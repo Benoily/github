@@ -13,15 +13,15 @@ import function_extern as fc
 import azure.functions as func
 logging.info('Python HTTP trigger function processed a request.')
 
-url = 'https://stoch.blob.core.windows.net/stock/articles.pickle'
+url = 'https://datac.blob.core.windows.net/data/articl.pickle'
 f = urllib.request.urlopen(url)
 article = pickle.load(f)
 
-url = 'https://stoch.blob.core.windows.net/stock/click.pickle'
+url = 'https://datac.blob.core.windows.net/data/clic.pickle'
 f = urllib.request.urlopen(url)
 click = pickle.load(f)
 
-url = 'https://stoch.blob.core.windows.net/stock/model_SVD.pickle'
+url = 'https://datac.blob.core.windows.net/data/surprise_cf.pickle'
 f = urllib.request.urlopen(url)
 model = pickle.load(f)
 
