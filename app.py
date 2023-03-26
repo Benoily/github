@@ -13,7 +13,7 @@ st.markdown("Bienvenue sur My Content ! Veuillez renseigner ci-dessous pour voir
 
 
 #if api_url == '':
-#api_url = 'https://recomt.azurewebsites.net/api/HttpTrigger1?'
+#api_url = 'https://recmt.azurewebsites.net/api/HttpTrigger1?'
 
 # Récupération de l'id 
 type = st.text_input('Entrez votre type (Mettez **cb** ou **cf**) : ')
